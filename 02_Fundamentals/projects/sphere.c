@@ -6,7 +6,11 @@
 
 int main(void)
 {
-    int radius = 10;
+    int radius;
+
+    printf("This program computes volume of a sphere!\n");
+    printf("Enter the radius: ");
+    scanf("%d", &radius);
 
     float volume = (4.0f / 3.0f) * PI * radius * radius * radius;
 
