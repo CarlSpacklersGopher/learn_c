@@ -22,5 +22,5 @@ int main(void)
 
     printf("%-10s %-10s %-10s\n", "Item", "Unit",  "Purchase");
     printf("%-10s %-10s %-10s\n", "",     "Price", "Date");
-    printf("%-10d $%-9.2f %d/%d/%d\n", item_num, unit_price, purch_month, purch_day, purch_year);
+    printf("%-10d $%7.2f   %d/%d/%d\n", item_num, unit_price, purch_month, purch_day, purch_year);
 }
