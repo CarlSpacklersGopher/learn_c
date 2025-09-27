@@ -16,6 +16,6 @@ c) i=5; j=0; k=-5;
 printf("%d", i && j || k); // 1
 
 d) i=1; j=2; k=3;
-printf("%d", i < j || k); // 0
+printf("%d", i < j || k); // 1
 ```
 
