@@ -2,6 +2,7 @@
 
 import sys
 import os
+import shutil
 
 if __name__ == '__main__':
     chapter_num = sys.argv[1]
@@ -17,3 +18,4 @@ if __name__ == '__main__':
     os.mkdir('notes')
     os.mkdir('projects')
     os.mkdir('projects/bin')
+    shutil.copyfile('../project_template.c', 'projects/template.c')
