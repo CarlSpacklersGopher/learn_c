@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 #define MSG_LENGTH 80
 
@@ -18,8 +19,8 @@ void encrypt(char *message, int shift);
 int main(void)
 {
     printf("Enter a message to be encrypted: ");
-    char cleartext[MSG_LENGTH];
-    fgets(cleartext, MSG_LENGTH, stdin);
+    char message[MSG_LENGTH];
+    fgets(message, MSG_LENGTH, stdin);
 
     printf("Enter shift amount (1-25): ");
     int shift = 0;
@@ -27,8 +28,19 @@ int main(void)
 
     char encrypted[MSG_LENGTH];
     printf("Encrypted message: ");
-    for (int i = 0; i < MSG_LENGTH; i++) {
-        char ch = cleartext[i];
+
+    encrypt(message, shift);
+
+    puts(message);
+
+    return 0;
+}
+
+void encrypt(char *message, int shift) {
+
+    char encrypted[MSG_LENGTH];
+    for (int i = 0; message[i] != '\0'; i++) {
+        char ch = message[i];
         if islower(ch) {
             encrypted[i] = 'a' + (((ch - 'a') + shift) % 26);
         } else if isupper(ch) {
@@ -36,20 +48,8 @@ int main(void)
         } else {
             encrypted[i] = ch;
         }
-
-        // Print
-        if (ch == '\n') {
-            putchar('\n');
-            break;
-        } else {
-            putchar(encrypted[i]);
-        }
-
     }
-    return 0;
-}
 
-void encrypt(char *message, int shift) {
-    return;
+    strcpy(message, encrypted);
 }
 
