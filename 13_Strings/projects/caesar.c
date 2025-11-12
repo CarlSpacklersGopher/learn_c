@@ -13,17 +13,13 @@
 
 #define MSG_LENGTH 80
 
+void encrypt(char *message, int shift);
+
 int main(void)
 {
     printf("Enter a message to be encrypted: ");
     char cleartext[MSG_LENGTH];
-    for (int i = 0; i < MSG_LENGTH; i++) {
-        char ch = getchar();
-        cleartext[i] = ch;
-        if (ch == '\n') {
-            break;
-        }
-    }
+    fgets(cleartext, MSG_LENGTH, stdin);
 
     printf("Enter shift amount (1-25): ");
     int shift = 0;
@@ -51,5 +47,9 @@ int main(void)
 
     }
     return 0;
+}
+
+void encrypt(char *message, int shift) {
+    return;
 }
 
