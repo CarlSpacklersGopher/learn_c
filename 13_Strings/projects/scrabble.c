@@ -2,8 +2,8 @@
  * From C PROGRAMMING: A MODERN APPROACH, Second Edition *
  * By K. N. King
  *
- * Chapter 8
- * Project 12
+ * Chapter 13
+ * Project 8
  *********************************************************/
 
 /* Computes the scrabble score of a word */
