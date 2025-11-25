@@ -30,6 +30,8 @@ void read_word(char *word, int len)
   while (ch != ' ' && ch != EOF) {
     if (pos < len)
       word[pos++] = ch;
+    else if (pos == len)
+      word[pos++] = '*';
     ch = read_char();
   }
   word[pos] = '\0';
