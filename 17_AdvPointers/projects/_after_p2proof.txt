@@ -1,0 +1,28 @@
+Enter operation code: i
+Enter part number: 3
+Enter part name: test3
+Enter quantity on hand: 3
+
+Enter operation code: i
+Enter part number: 2
+Enter part name: test2
+Enter quantity on hand: 2
+
+Enter operation code: i
+Enter part number: 1
+Enter part name: test1
+Enter quantity on hand: 1
+
+Enter operation code: i
+Enter part number: 4
+Enter part name: test4
+Enter quantity on hand: 4
+
+Enter operation code: p
+Part Number   Part Name                  Quantity on Hand
+      1       test1                              1
+      2       test2                              2
+      3       test3                              3
+      4       test4                              4
+
+Enter operation code: q
