@@ -1,0 +1,83 @@
+Enter operation code: i
+Enter part number: 1
+Enter part name: test1
+Enter quantity on hand: 1
+
+Enter operation code: i
+Enter part number: 2
+Enter part name: test2
+Enter quantity on hand: 2
+
+Enter operation code: i
+Enter part number: 3
+Enter part name: test3
+Enter quantity on hand: 3
+
+Enter operation code: i
+Enter part number: 4
+Enter part name: test4
+Enter quantity on hand: 4
+
+Enter operation code: i
+Enter part number: 5
+Enter part name: test5
+Enter quantity on hand: 5
+
+Enter operation code: i
+Enter part number: 6
+Enter part name: test6
+Enter quantity on hand: 6
+
+Enter operation code: i
+Enter part number: 7
+Enter part name: test7
+Enter quantity on hand: 7
+
+Enter operation code: i
+Enter part number: 8
+Enter part name: test8
+Enter quantity on hand: 8
+
+Enter operation code: i
+Enter part number: 9
+Enter part name: test9
+Enter quantity on hand: 9
+
+Enter operation code: p
+Part Number   Part Name                  Quantity on Hand
+      1       test1                              1
+      2       test2                              2
+      3       test3                              3
+      4       test4                              4
+      5       test5                              5
+      6       test6                              6
+      7       test7                              7
+      8       test8                              8
+      9       test9                              9
+
+Enter operation code: i
+Enter part number: 10
+Enter part name: test10
+Enter quantity on hand: 10
+
+Enter operation code: i
+Database is full; Expanding storage.
+Enter part number: 11
+Enter part name: test11
+Enter quantity on hand: 11
+
+Enter operation code: p
+Part Number   Part Name                  Quantity on Hand
+      1       test1                              1
+      2       test2                              2
+      3       test3                              3
+      4       test4                              4
+      5       test5                              5
+      6       test6                              6
+      7       test7                              7
+      8       test8                              8
+      9       test9                              9
+     10       test10                            10
+     11       test11                            11
+
+Enter operation code: q
